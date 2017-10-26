@@ -1,5 +1,4 @@
 import {expect} from 'chai';
-import index from '../lib/index.js'
 
 import node from '../lib/Node.js';
 import Trie from '../lib/Trie.js';
@@ -164,14 +163,14 @@ describe('Populate', () => {
     
   });
 
-  it.skip ('should be able to populate the trie with the dictionary',() => {
+  it ('should be able to populate the trie with the dictionary',() => {
     const trie = new Trie();
     trie.populate(dictionary);
 
     expect(trie.count).to.equal(234371);
   });
 
-  it.skip ('should be able to suggest words based on the dictionary after the trie been populated by the dictionary', () =>{
+  it ('should be able to suggest words based on the dictionary after the trie been populated by the dictionary', () =>{
     const trie = new Trie();
     trie.populate(dictionary);
 
