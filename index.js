@@ -3,7 +3,7 @@ const trie = require ('../lib/Trie.js')
 
 
 
-module.exports = {
-	node,
-	trie
-}
+// module.exports = {
+// 	node,
+// 	trie
+// }

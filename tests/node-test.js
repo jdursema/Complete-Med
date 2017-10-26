@@ -1,14 +1,20 @@
 import {expect} from 'chai';
 import index from '../lib/index.js';
 
-import Node from '../lib/Node.js';
-import trie from '../lib/Trie.js';
+import node from '../lib/Node.js';
+// import trie from '../lib/Trie.js';
 
 
 describe('Node', () =>{
 
-	it.skip ('should be an object', () =>{
-		expect (Node).to.be.a('object'
-			);
+	it ('should be a thing', () =>{
+		expect(node).to.exist;
 	})
+
+
+	it ('should be a function', () =>{
+		expect(node).to.be.a('function')
+	});
+
+	
 })
