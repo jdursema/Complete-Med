@@ -23,12 +23,7 @@ describe('Trie', () =>{
     const trie = new Trie();
 
     expect(trie.root.letter).to.equal('');
-  })
-
-
-
-
-
+  });
 });
 
 describe('Insert', () => {
@@ -86,8 +81,6 @@ describe('Insert', () => {
 
     expect(trie.root.child.p.child.i.endWord).to.equal(true);
 
-
-
   });
 
 });
@@ -115,7 +108,6 @@ describe('Suggest', () => {
 
 
     expect(trie.suggest('du')).to.deep.equal(['duck']);
-
 
   });
 
